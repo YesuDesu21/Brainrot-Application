@@ -1,0 +1,6 @@
+const video = document.querySelector('video')
+const volumeButton = document.getElementById('volume-button')
+const leftButton = document.getElementById('left-button')
+const rightButton = document.getElementById('right-button')
+const pauseButton = document.getElementById('pause-button')
+const powerButton = document.getElementById('power-button')
