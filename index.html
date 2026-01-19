@@ -1,35 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset = "UTF-8"/>
+    <meta charset="UTF-8" />
     <title>Brainrot Application</title>
-    <link rel="stylesheet" href = "style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div class="player-container">
-        <div>
+        <div class="title">
             <h3>Focus!! しっかりして!!</h3>
         </div>
         <div class="content">
             <!-- array of videos -->
-             <video></video>
+            <video></video>
         </div>
         <div class="button-layer">
             <button id="volume-button" class="button">
                 <!-- Sound -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <title>Volume</title>
+                    <g id="Volume">
+                        <g id="Volume-2" data-name="Volume">
+                            <path
+                                d="M256,73.82C155.3831,73.82,73.8207,155.4,73.8207,256a182.1793,182.1793,0,1,0,364.3586,0C438.1793,155.3917,356.6087,73.82,256,73.82Zm-.8433,247.8159a10.843,10.843,0,0,1-17.5347,8.5437l-35.5778-27.8613a21.4626,21.4626,0,0,1-5.1418.65H161.2628a21.1708,21.1708,0,0,1-21.1734-21.1635V220.0522a21.1651,21.1651,0,0,1,21.1734-21.1635h35.6391a21.2215,21.2215,0,0,1,5.9679.8613l34.7517-27.2376a10.841,10.841,0,0,1,17.5347,8.5338v140.59Zm35.604-44.5428-11.8908-11.8917a22.5564,22.5564,0,0,0-.8793-27.8262l11.7946-11.8035a39.1665,39.1665,0,0,1,.9755,51.5214Zm15.408,15.4161a60.93,60.93,0,0,0-.9755-82.3356L316.9961,198.37a77.6138,77.6138,0,0,1,.9927,105.9516Zm40.1742,39.8232-11.7945-11.8035a100.7227,100.7227,0,0,0-1.0017-138.375L345.35,170.3587a117.4006,117.4006,0,0,1,.9927,161.9739Z" />
+                        </g>
+                    </g>
+                </svg>
             </button>
             <button id="left-button" class="button">
                 <!-- Left button -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>Artboard-58</title>
+                    <g id="Double_left" data-name="Double left">
+                        <path
+                            d="M12,17a1,1,0,0,1-.707-.293l-4-4a1,1,0,0,1,0-1.414l4-4a1,1,0,1,1,1.414,1.414L9.414,12l3.293,3.293A1,1,0,0,1,12,17Z"
+                            style="fill:#1c1b1e" />
+                        <path
+                            d="M16,17a1,1,0,0,1-.707-.293l-4-4a1,1,0,0,1,0-1.414l4-4a1,1,0,1,1,1.414,1.414L13.414,12l3.293,3.293A1,1,0,0,1,16,17Z"
+                            style="fill:#1c1b1e" />
+                    </g>
+                </svg>
+            </button>
+            <button id="pause-button" class="button pause-btn">
+                <!-- Pause button -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <title>Play</title>
+                    <g id="Play">
+                        <g id="Play-2" data-name="Play">
+                            <path
+                                d="M256,73.8206A182.1794,182.1794,0,1,0,438.18,256,182.1821,182.1821,0,0,0,256,73.8206Zm67.8249,192.2167L218.7,326.7342a10.3757,10.3757,0,0,1-15.5655-8.991V196.3574a10.38,10.38,0,0,1,15.5745-8.991l105.1254,60.697a10.3756,10.3756,0,0,1-.009,17.9739Z" />
+                        </g>
+                    </g>
+                </svg>
+
             </button>
             <button id="right-button" class="button">
                 <!-- Right button -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>Artboard-57</title>
+                    <g id="Double_Arrow" data-name="Double Arrow">
+                        <path
+                            d="M12,17a1,1,0,0,1-.707-1.707L14.586,12,11.293,8.707a1,1,0,1,1,1.414-1.414l4,4a1,1,0,0,1,0,1.414l-4,4A1,1,0,0,1,12,17Z"
+                            style="fill:#1c1b1e" />
+                        <path
+                            d="M8,17a1,1,0,0,1-.707-1.707L10.586,12,7.293,8.707A1,1,0,1,1,8.707,7.293l4,4a1,1,0,0,1,0,1.414l-4,4A1,1,0,0,1,8,17Z"
+                            style="fill:#1c1b1e" />
+                    </g>
+                </svg>
             </button>
-            <button id="pause-button" class="button">
-                <!-- Pause button -->
-            </button>
+
             <button id="power-button" class="button">
                 <!-- Turn off -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>Power</title>
+                    <g id="Power">
+                        <path
+                            d="M14.83,7.76a1,1,0,0,0,0,1.41,4,4,0,1,1-5.66,0A1,1,0,0,0,7.76,7.76a6,6,0,0,0,8.48,8.48C20.16,12.33,16.52,6.06,14.83,7.76Z" />
+                        <path d="M13,11V7a1,1,0,0,0-2,0v4A1,1,0,0,0,13,11Z" />
+                        <path d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22Z" />
+                    </g>
+                </svg>
             </button>
         </div>
     </div>

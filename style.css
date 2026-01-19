@@ -1,14 +1,74 @@
-.player-container{
-    width: 292;
-    height: 430;
-    background-image: linear-gradient(45deg, #CAF0F8 , #CCE7C9);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
 }
 
-.content{
-    background-color:rgb(117, 165, 5);
+html,
+body {
+    overflow: hidden;
 }
 
-.button-layer{
-    background-color:chocolate;
+.player-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, #CAF0F8, #CCE7C9);
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    app-region: drag;
+    /* background-color: rgb(28, 255, 149); */
+}
+
+.content {
+    height: 19rem;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    border: 5px solid #fcd0fcDA;
+    background-color: #75a505;
+}
+
+.button-layer {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.button-layer button {
+    /* temporary */
+    margin: 2px;
+    background:none;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    transform: scale(1.0);
+}
+
+.button-layer button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.95);
+}
+
+.button-layer button:active {
+    transform: scale(0.85);
+}
+
+.button-layer button path {
+    fill: rgb(80, 80, 80);
+    stroke: #fcd0fcDA;
+    stroke-width: 1px;  /* Thin border like the right image */
+}
