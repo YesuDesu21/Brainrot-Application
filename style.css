@@ -33,9 +33,19 @@ body {
     height: 19rem;
     border-radius: 10px;
     margin-top: 5px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 5px solid #fcd0fcDA;
-    background-color: #75a505;
+    background-color: #000000;
+}
+
+.content video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .button-layer {
@@ -49,7 +59,7 @@ body {
 .button-layer button {
     /* temporary */
     margin: 2px;
-    background:none;
+    background: none;
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 4px;
@@ -67,8 +77,18 @@ body {
     transform: scale(0.85);
 }
 
+.button-layer button.muted path{
+  fill: rgb(255, 0, 0, 0.3); 
+  stroke: 1px solid rgb(111, 0, 0);       
+}
+
+.button-layer button.paused path{
+  fill: rgb(255, 0, 0, 0.3); 
+  stroke: 1px solid rgb(111, 0, 0);       
+}
+
 .button-layer button path {
     fill: rgb(80, 80, 80);
     stroke: #fcd0fcDA;
-    stroke-width: 1px;  /* Thin border like the right image */
+    stroke-width: 1px;
 }
