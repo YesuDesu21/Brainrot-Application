@@ -23,6 +23,7 @@ let currentVideoIndex = 0
 function bootUp(){
   video.innerHTML = `<source src="${bootUpVideo}" type="video/mp4">`
   video.load()
+  video.loop = false
   // loadVideo(currentVideoIndex)
   setTimeout(() => loadVideo(currentVideoIndex), 6000);
 }
@@ -31,6 +32,7 @@ function loadVideo(currentVideoIndex) {
   enableButtons()
   video.innerHTML = `<source src="${videos[currentVideoIndex].path}" type="video/mp4">`;
   video.load();
+  video.loop = true;
 }
 
 volumeButton.addEventListener('click', function () {
